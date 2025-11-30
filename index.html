@@ -18,7 +18,54 @@
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="style.css" />
   </head>
+
+  
   <body>
+    <!-- ===== HEADER ===== -->
+    <header class="navShellAlpha">
+      <img class="brandMarkSig" src="assets/image/logo.png" alt="Book Store Logo" />
+
+      <!-- Mobile drawer checkbox (CSS-only menu trigger) -->
+      <input type="checkbox" id="navDrawerFlag" class="navDrawerFlag" />
+
+      <!-- Desktop navigation -->
+      <nav class="navLinkRow">
+        <a class="navAnchorItem" href="#home">Home</a>
+        <a class="navAnchorItem" href="#about">About</a>
+        <a class="navAnchorItem" href="#featured">Featured</a>
+        <a class="navAnchorItem" href="#arrivals">Arrivals</a>
+        <a class="navAnchorItem" href="#reviews">Reviews</a>
+        <a class="navAnchorItem" href="#blog">Blog</a>
+      </nav>
+
+      <div class="actionCluster">
+        <div class="searchDock">
+          <input class="searchInputField" placeholder="Search" />
+          <i class="bx bx-search"></i>
+        </div>
+
+        <!-- Mobile hamburger -->
+        <label for="navDrawerFlag" class="menuToggleHandle">
+          <i class="bx bx-menu"></i>
+        </label>
+      </div>
+
+      <!-- Slide-in side menu -->
+      <div class="sideNavPanel">
+        <nav class="sideNavLinks">
+          <a class="navAnchorItem" href="#home">Home</a>
+          <a class="navAnchorItem" href="#about">About</a>
+          <a class="navAnchorItem" href="#featured">Featured</a>
+          <a class="navAnchorItem" href="#arrivals">Arrivals</a>
+          <a class="navAnchorItem" href="#reviews">Reviews</a>
+          <a class="navAnchorItem" href="#blog">Blog</a>
+        </nav>
+
+        <label for="navDrawerFlag" class="closeDrawerBtn">
+          <i class="bx bx-x"></i>
+        </label>
+      </div>
+    </header>
 
     
   </body>
