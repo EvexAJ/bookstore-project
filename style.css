@@ -45,3 +45,70 @@ body {
   min-height: 80vh;
   padding: 10rem 7% 2rem;
 }
+/* ---------- HEADER ---------- */
+.navShellAlpha {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 7%;
+  background: var(--neutral-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 7px var(--primary-blue);
+  z-index: 100;
+}
+
+.brandMarkSig {
+  width: 6rem;
+}
+
+.navLinkRow {
+  display: flex;
+  gap: 1rem;
+}
+
+.navAnchorItem {
+  font-size: var(--nav-fs);
+  color: var(--neutral-black);
+  position: relative;
+}
+
+.navAnchorItem::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 50%;
+  bottom: -6px;
+  background: var(--primary-blue);
+  transition: 0.3s;
+}
+
+.navAnchorItem:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.actionCluster {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: var(--icons-fs);
+}
+
+.searchDock {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.searchInputField {
+  border: 1px solid #000;
+  border-radius: 1rem;
+  width: 15rem;
+  height: 2.4rem;
+  font-size: 1.1rem;
+  padding: 0 0.8rem;
+}
