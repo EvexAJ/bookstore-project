@@ -280,3 +280,44 @@ body {
   color: #333;
   margin-bottom: 2rem;
 }
+
+/* ---------- FEATURED BOOKS ---------- */
+.highlightZone {
+  text-align: center;
+}
+
+.highlightTitle {
+  font-size: var(--featured-title-fs);
+  margin-bottom: 3rem;
+}
+
+.highlightGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 2rem;
+}
+
+.highlightCard {
+  padding: 1.5rem;
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border-radius: 1rem;
+}
+
+.highlightCard img {
+  width: 100%;
+  border-radius: 0.6rem;
+}
+
+.authName {
+  font-size: var(--john-deo-fs);
+  color: #777;
+}
+
+.priceTag {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: var(--primary-blue);
+}
+
