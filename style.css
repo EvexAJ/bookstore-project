@@ -379,3 +379,34 @@ body {
   margin-bottom: 1rem;
 }
 
+/* ---------- BLOG ---------- */
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.blogCard {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.2rem 0.6rem rgba(0,0,0,0.2);
+}
+
+.blogCard img {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.blogCard h3 {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+
+.blogCard p {
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  color: #444;
+}
+
